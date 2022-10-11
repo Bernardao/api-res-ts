@@ -1,7 +1,12 @@
 export interface Car {
+  name: string
   color: string
-  gas: "gasoline" | "electric"
+  gas: GasType
   year: number
   description: string
   price: number
+}
+export enum GasType {
+  GASOLINE = "gasoline",
+  ELECTRIC = "electric"
 }
